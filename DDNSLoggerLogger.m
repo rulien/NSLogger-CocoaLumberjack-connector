@@ -64,9 +64,9 @@ static DDNSLoggerLogger *sharedInstance;
         switch (logMessage.flag) {
                 // NSLogger log levels start a 0, the bigger the number,
                 // the more specific / detailed the trace is meant to be
-            case DDLogLevelError: nsloggerLogLevel = 0; break;
-            case DDLogLevelWarning: nsloggerLogLevel  = 1; break;
-            case DDLogLevelInfo: nsloggerLogLevel  = 2; break;
+            case DDLogFlagError: nsloggerLogLevel = 0; break;
+            case DDLogFlagWarning: nsloggerLogLevel  = 1; break;
+            case DDLogFlagInfo: nsloggerLogLevel  = 2; break;
             default: nsloggerLogLevel             = 3; break;
         }
 
